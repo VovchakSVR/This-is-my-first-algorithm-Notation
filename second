@@ -1,0 +1,13 @@
+base = 7
+x = int(input())
+
+if x == 0:
+    print(0)
+else:
+    result = ''
+    while x > 0:
+        digit = x % base
+        result = str(digit) + result  # добавляем цифру в начало
+        x //= base
+
+    print(result)
