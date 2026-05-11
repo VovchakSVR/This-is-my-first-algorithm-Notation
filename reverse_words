@@ -1,0 +1,9 @@
+def reverse_words(text):
+    """Переворачивает порядок слов в строке"""
+    words = text.split()           # разбиваем на слова
+    reversed_words = words[::-1]   # переворачиваем список слов
+    return ' '.join(reversed_words) # собираем обратно в строку
+
+# Пример
+phrase = "Python это круто"
+print(reverse_words(phrase))  # Вывод: "круто это Python"
